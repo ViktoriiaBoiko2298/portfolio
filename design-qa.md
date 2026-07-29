@@ -22,6 +22,7 @@
 - Side rail: integrations and technologies are readable without scrolling inside the slide; live-site and GitHub actions remain separated and visible.
 - Gallery: every screenshot has a visible zoom affordance. Clicking the main DashTeam screenshot opens a modal with the full source image; the close control works.
 - Responsive check: 390 × 844 viewport has no horizontal overflow. Content and side rail stack vertically.
+- Intermediate-width check: 936 × 1514 viewport has no horizontal overflow or overlap. The project gallery stays above a two-column technology/integration rail.
 
 **Interaction and browser checks**
 
@@ -35,7 +36,9 @@
 - Earlier P1: the last project was presented as “DashTeam Signal Bridge” rather than the actual DashTeam product. Fixed by replacing the project content and imagery with the live DashTeam site.
 - Earlier P1: screenshots had no full-size viewing interaction. Fixed with keyboard-accessible clickable figures and a full-screen lightbox.
 - Earlier P2: integrations and technologies were compressed in a bottom rail. Fixed by moving them into a high-contrast right-side rail on desktop and a readable stacked rail on mobile.
+- Later P1: at approximately 936 px viewport width, the desktop gallery extended beneath the 300 px side rail. Fixed with a dedicated ≤1320 px layout: the project remains a two-column editorial composition while the rail moves below it; at ≤920 px the complete mobile stack is used.
 - Post-fix evidence: `check-dashteam-side.png`, `check-lightbox.png`, and `check-mobile.png`.
+- Responsive post-fix evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-936-fixed.png` and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-desktop-fixed.png`.
 
 **Open Questions**
 
@@ -47,6 +50,7 @@
 - [x] Side rail added for integrations and technologies.
 - [x] Full-size screenshot viewer added.
 - [x] Desktop and mobile overflow checked.
+- [x] Intermediate-width overlap checked at 936 px.
 - [x] Console errors checked.
 
 **Follow-up Polish**
