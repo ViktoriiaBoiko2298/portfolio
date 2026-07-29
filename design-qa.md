@@ -23,6 +23,7 @@
 - Gallery: every screenshot has a visible zoom affordance. Clicking the main DashTeam screenshot opens a modal with the full source image; the close control works.
 - Responsive check: 390 × 844 viewport has no horizontal overflow. Content and side rail stack vertically.
 - Intermediate-width check: 936 × 1514 viewport has no horizontal overflow or overlap. The project gallery stays above a two-column technology/integration rail.
+- Revised intermediate layout check: at 1024 × 768, the heading begins 100 px from the viewport top, the complete integrations/technologies/GitHub card ends at 609 px, and the gallery remains in a separate right column without overlap.
 
 **Interaction and browser checks**
 
@@ -37,8 +38,10 @@
 - Earlier P1: screenshots had no full-size viewing interaction. Fixed with keyboard-accessible clickable figures and a full-screen lightbox.
 - Earlier P2: integrations and technologies were compressed in a bottom rail. Fixed by moving them into a high-contrast right-side rail on desktop and a readable stacked rail on mobile.
 - Later P1: at approximately 936 px viewport width, the desktop gallery extended beneath the 300 px side rail. Fixed with a dedicated ≤1320 px layout: the project remains a two-column editorial composition while the rail moves below it; at ≤920 px the complete mobile stack is used.
+- User-requested refinement: the medium-width rail was still too far below the project. Fixed by placing the project heading and complete technical card in the left column while the gallery occupies the full right column. Two supplied DashTeam product screenshots now replace repeated landing-page crops.
 - Post-fix evidence: `check-dashteam-side.png`, `check-lightbox.png`, and `check-mobile.png`.
 - Responsive post-fix evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-936-fixed.png` and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-desktop-fixed.png`.
+- Latest evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-medium-content-left.png`, `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-dashteam-new-screens.png`, and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-dashteam-new-mobile.png`.
 
 **Open Questions**
 
@@ -51,6 +54,8 @@
 - [x] Full-size screenshot viewer added.
 - [x] Desktop and mobile overflow checked.
 - [x] Intermediate-width overlap checked at 936 px.
+- [x] Complete technical card visible beside the gallery at 1024 × 768.
+- [x] Supplied DashTeam board and task-detail screenshots added and verified.
 - [x] Console errors checked.
 
 **Follow-up Polish**
