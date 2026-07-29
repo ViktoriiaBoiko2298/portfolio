@@ -47,3 +47,35 @@ const observer = new IntersectionObserver(
 );
 
 slides.forEach((slide) => observer.observe(slide));
+
+const lightbox = document.querySelector(".lightbox");
+const lightboxImage = lightbox.querySelector("img");
+const lightboxCaption = lightbox.querySelector("p");
+
+document.querySelectorAll(".shot, .code-shot").forEach((figure) => {
+  figure.tabIndex = 0;
+  figure.setAttribute("role", "button");
+  figure.setAttribute("aria-label", `Открыть крупно: ${figure.querySelector("figcaption")?.textContent || "скриншот"}`);
+  figure.insertAdjacentHTML("beforeend", '<span class="zoom-badge" aria-hidden="true"><i class="ri-zoom-in-line"></i></span>');
+
+  const open = () => {
+    const image = figure.querySelector("img");
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+    lightboxCaption.textContent = figure.querySelector("figcaption")?.textContent || "";
+    lightbox.showModal();
+  };
+
+  figure.addEventListener("click", open);
+  figure.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      open();
+    }
+  });
+});
+
+document.querySelector(".lightbox-close").addEventListener("click", () => lightbox.close());
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) lightbox.close();
+});

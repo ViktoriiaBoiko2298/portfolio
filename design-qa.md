@@ -1,67 +1,56 @@
-# Design QA
+**Comparison target**
 
 - Source visual truth: `/Users/viktoria/.codex/generated_images/019faf2c-eb70-7811-a43a-e43b177e9761/call_FsT0PwKJOGpMNCBL2v1TnbM0.png`
-- Final implementation capture: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/portfolio-implementation-final.png`
+- Implementation screenshot: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-dashteam-side.png`
 - Combined comparison: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/design-comparison-final.png`
-- Supporting slide review: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/portfolio-contact-sheet.png`
-- Viewport: 1440 × 1024 CSS pixels, device scale factor 1
-- Source pixels: 1488 × 1058
-- Implementation pixels: 1440 × 1024
-- Comparison normalization: both images proportionally scaled into 720 × 512 frames and placed side by side
-- State: AI Landing Generator project slide; supporting review covers News Agent, Performance Analytics, Signal Bridge, and 390 × 844 mobile layout
+- Source pixels: 1487 × 1058.
+- Implementation pixels and CSS viewport: 1440 × 1024 at 1× density.
+- State: desktop DashTeam project slide, light theme.
+- Normalization: both captures were proportionally scaled into equal 720 × 512 comparison panels.
 
-## Full-view comparison evidence
+**Findings**
 
-The implementation preserves the selected exhibition direction: warm light canvas, oversized condensed project title, one dominant product image, two supporting views, pale color field, compact integration rail, GitHub action, project numbering, and circular slide controls. The implementation deliberately uses the real product screenshots and their original dark UI instead of the illustrative mock screens.
+- No actionable P0/P1/P2 differences remain. The implementation preserves the selected editorial portfolio direction: oversized condensed-feeling display hierarchy, restrained light palette, numbered project framing, dominant product imagery, monospaced metadata, thin borders, and compact circular controls.
+- Fonts and typography: Space Grotesk and the monospace metadata maintain the intended hierarchy and readable optical contrast. The DashTeam title and summary wrap cleanly.
+- Spacing and layout rhythm: the main editorial field and the 300 px side rail are balanced at 1440 px. The side rail is intentionally different from the source bottom rail because the user specifically requested technologies and integrations to remain visible at the side.
+- Colors and visual tokens: warm white, pale blue, black, lime accents, fine gray borders, and restrained elevation remain consistent with the selected design.
+- Image quality and asset fidelity: the real DashTeam screenshot is sharp, correctly cropped, and reused for meaningful detail views. No placeholder imagery is present. The zoomed dialog shows the full screenshot without cropping.
+- Copy and content: project name, live site link, integrations, technologies, and Signal Bridge repository label are specific and readable.
 
-## Focused region comparison evidence
+**Focused region evidence**
 
-Focused review covered the title block, three-image gallery, bottom integration rail, GitHub action, slide controls, and the mobile slide layout. These regions were large enough in the normalized comparison to judge typography, spacing, crop, and control visibility.
+- Side rail: integrations and technologies are readable without scrolling inside the slide; live-site and GitHub actions remain separated and visible.
+- Gallery: every screenshot has a visible zoom affordance. Clicking the main DashTeam screenshot opens a modal with the full source image; the close control works.
+- Responsive check: 390 × 844 viewport has no horizontal overflow. Content and side rail stack vertically.
 
-## Required fidelity surfaces
+**Interaction and browser checks**
 
-- Fonts and typography: Space Grotesk provides the compact geometric display character; Inter handles readable body and UI copy. Weight, line height, wrapping, and hierarchy match the selected direction.
-- Spacing and layout rhythm: full-viewport slides, wide gallery, compact bottom rail, asymmetric columns, and generous whitespace follow the reference. No desktop controls overflow.
-- Colors and visual tokens: warm paper, charcoal type, pale yellow/mint/peach/blue project fields, and restrained yellow accent are consistent and accessible.
-- Image quality and asset fidelity: every project uses real high-resolution application or source-code captures. Images keep their original content and are cropped intentionally without stretching.
-- Copy and content: project names, descriptions, stacks, integrations, GitHub destinations, and slide numbering are accurate to the repositories.
+- Project navigation to DashTeam tested.
+- Screenshot lightbox open and close tested.
+- Live-site and GitHub links verified in the DOM with correct destinations.
+- Browser console checked: no errors.
 
-## Comparison history
+**Comparison history**
 
-### Pass 1
+- Earlier P1: the last project was presented as “DashTeam Signal Bridge” rather than the actual DashTeam product. Fixed by replacing the project content and imagery with the live DashTeam site.
+- Earlier P1: screenshots had no full-size viewing interaction. Fixed with keyboard-accessible clickable figures and a full-screen lightbox.
+- Earlier P2: integrations and technologies were compressed in a bottom rail. Fixed by moving them into a high-contrast right-side rail on desktop and a readable stacked rail on mobile.
+- Post-fix evidence: `check-dashteam-side.png`, `check-lightbox.png`, and `check-mobile.png`.
 
-- [P2] The dominant screenshot used `object-fit: contain`, creating a large empty area.
-- [P2] The project title wrapped to three lines and weakened the selected two-line hierarchy.
+**Open Questions**
 
-Fixes:
+- None blocking.
 
-- Rebalanced the slide grid and reduced the display scale.
-- Switched the dominant screenshot to a filled, top-aligned crop.
+**Implementation Checklist**
 
-### Pass 2
+- [x] Real DashTeam screenshot added.
+- [x] Side rail added for integrations and technologies.
+- [x] Full-size screenshot viewer added.
+- [x] Desktop and mobile overflow checked.
+- [x] Console errors checked.
 
-- [P2] Mobile document width was 414 px in a 390 px viewport because the About headline forced a wider grid track.
+**Follow-up Polish**
 
-Fixes:
-
-- Changed the mobile About grid to `minmax(0, 1fr)`.
-- Added explicit min-width constraints and reduced the mobile display scale.
-- Re-tested at 390 × 844; document width now equals viewport width.
-
-### Final pass
-
-No actionable P0, P1, or P2 differences remain. The real application screenshots are wider than the concept imagery, so their gallery crops differ slightly from the generated reference; this is an intentional content constraint, not a fidelity failure.
-
-## Interaction and browser checks
-
-- Next-slide control moved from `#project-ai` to the News Agent slide.
-- Arrow-key/Page-key navigation is wired to the same slide progression.
-- All four GitHub links are present.
-- Desktop console errors: none.
-- Mobile horizontal overflow: none at 390 px.
-
-## Follow-up polish
-
-- [P3] A future pass could add separate live-state screenshots for more product workflows as those states become available.
+- P3: replace the two cropped DashTeam detail views with authenticated in-product screens if public, non-sensitive screenshots become available.
 
 final result: passed

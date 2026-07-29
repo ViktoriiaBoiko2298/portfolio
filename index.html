@@ -30,7 +30,7 @@
       <a href="#project-ai" aria-label="AI Landing Generator"></a>
       <a href="#project-news" aria-label="Global News Agent"></a>
       <a href="#project-analytics" aria-label="People Performance Analytics"></a>
-      <a href="#project-signal" aria-label="DashTeam Signal Bridge"></a>
+      <a href="#project-signal" aria-label="DashTeam"></a>
       <a href="#about" aria-label="Обо мне"></a>
     </aside>
 
@@ -195,40 +195,47 @@
         <div class="slide-top">
           <div class="slide-heading">
             <p class="slide-count">Проект 04 / 04</p>
-            <h2>DashTeam<br />Signal Bridge</h2>
+            <h2>DashTeam</h2>
             <p class="slide-summary">
-              Защищённый backend‑мост между событиями DashTeam и доставкой сообщений в Signal.
+              Рабочее пространство для командных задач, дедлайнов и публикаций в одном спокойном интерфейсе.
             </p>
           </div>
-          <div class="signal-visual">
-            <figure class="code-shot">
-              <img src="./assets/signal-code.png" alt="Исходный код DashTeam Signal Bridge на GitHub" />
-              <figcaption>01 · Реальный Node.js‑сервис</figcaption>
+          <div class="gallery gallery-dashteam" aria-label="Экраны DashTeam">
+            <figure class="shot shot-main">
+              <img src="./assets/dashteam-home.png" alt="Главный экран DashTeam" />
+              <figcaption>01 · Главный экран</figcaption>
             </figure>
-            <ol class="signal-flow">
-              <li><span>01</span><strong>DashTeam</strong><small>событие или уведомление</small></li>
-              <li><span>02</span><strong>Bridge API</strong><small>проверка токена и payload</small></li>
-              <li><span>03</span><strong>signal‑cli</strong><small>REST API linked device</small></li>
-              <li><span>04</span><strong>Signal</strong><small>доставка сообщения</small></li>
-            </ol>
+            <figure class="shot shot-small shot-top dash-crop dash-crop-brand">
+              <img src="./assets/dashteam-home.png" alt="Брендинг и описание DashTeam" />
+              <figcaption>02 · Командный контур</figcaption>
+            </figure>
+            <figure class="shot shot-small shot-bottom dash-crop dash-crop-login">
+              <img src="./assets/dashteam-home.png" alt="Защищённый вход в DashTeam" />
+              <figcaption>03 · Защищённый вход</figcaption>
+            </figure>
           </div>
         </div>
         <div class="slide-rail">
           <div class="rail-block">
-            <p>Возможности</p>
+            <p>Интеграции</p>
             <div class="tech-list">
-              <span><i class="ri-shield-keyhole-line"></i> Bearer Auth</span>
-              <span><i class="ri-qr-code-line"></i> QR Setup</span>
-              <span><i class="ri-heart-pulse-line"></i> Health Check</span>
+              <span><i class="ri-database-2-line"></i> Supabase</span>
+              <span><i class="ri-mail-check-line"></i> Email Auth</span>
+              <span><i class="ri-message-3-line"></i> Signal</span>
             </div>
           </div>
           <div class="rail-block">
             <p>Технологии</p>
-            <div class="tags"><span>Node.js 22</span><span>HTTP API</span><span>Docker</span><span>signal‑cli</span></div>
+            <div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Render</span></div>
           </div>
-          <a class="github-link" href="https://github.com/ViktoriiaBoiko2298/dashteam-signal-bridge" target="_blank" rel="noreferrer">
-            <i class="ri-github-fill"></i><span>Открыть на GitHub</span><i class="ri-arrow-right-up-line"></i>
-          </a>
+          <div class="project-actions">
+            <a class="live-link" href="https://dashteam.org" target="_blank" rel="noreferrer">
+              <i class="ri-global-line"></i><span>Открыть сайт</span><i class="ri-arrow-right-up-line"></i>
+            </a>
+            <a class="github-link" href="https://github.com/ViktoriiaBoiko2298/dashteam-signal-bridge" target="_blank" rel="noreferrer">
+              <i class="ri-github-fill"></i><span>Signal Bridge на GitHub</span><i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
           <div class="slide-arrows">
             <button data-prev aria-label="Предыдущий слайд"><i class="ri-arrow-up-line"></i></button>
             <button data-next aria-label="Следующий слайд"><i class="ri-arrow-down-line"></i></button>
@@ -253,5 +260,11 @@
         <footer><span>© 2026 Viktoriia Boiko</span><a href="https://github.com/ViktoriiaBoiko2298" target="_blank" rel="noreferrer">GitHub <i class="ri-arrow-right-up-line"></i></a></footer>
       </section>
     </main>
+
+    <dialog class="lightbox" aria-label="Просмотр скриншота">
+      <button class="lightbox-close" aria-label="Закрыть"><i class="ri-close-line"></i></button>
+      <img src="" alt="" />
+      <p></p>
+    </dialog>
   </body>
 </html>
