@@ -3,320 +3,255 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Портфолио Viktoriia Boiko: AI-продукты, аналитические системы и backend-интеграции."
-    />
+    <meta name="description" content="Портфолио Viktoriia Boiko: AI‑продукты, аналитика и интеграции." />
     <meta property="og:title" content="Viktoriia Boiko — Product Developer" />
-    <meta
-      property="og:description"
-      content="AI products · Analytics · Web systems · Integrations"
-    />
+    <meta property="og:description" content="AI products · Analytics · Web systems · Integrations" />
     <meta property="og:image" content="./assets/og.png" />
     <title>Viktoriia Boiko — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <header class="nav wrap">
-      <a class="logo" href="#top" aria-label="В начало">VB<span>.</span></a>
+    <header class="site-header">
+      <a class="logo" href="#intro" aria-label="В начало">VB<span>.</span></a>
       <nav aria-label="Основная навигация">
-        <a href="#projects">Проекты</a>
+        <a href="#project-ai">Проекты</a>
         <a href="#about">Обо мне</a>
-        <a href="mailto:viktoriiaboikoo@gmail.com">Контакты</a>
+        <a class="header-contact" href="mailto:viktoriiaboikoo@gmail.com">Связаться <i class="ri-arrow-right-up-line"></i></a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero wrap">
-        <p class="availability"><i></i> Открыта к новым проектам</p>
-        <div class="hero-title">
-          <p>Product developer</p>
-          <h1>Viktoriia<br /><span>Boiko</span></h1>
-        </div>
-        <div class="hero-foot">
-          <p>
-            Проектирую и создаю веб-продукты: от AI‑сервисов и аналитики до
-            интеграций, автоматизации и production‑инфраструктуры.
+    <aside class="slide-dots" aria-label="Навигация по слайдам">
+      <a class="active" href="#intro" aria-label="Вступление"></a>
+      <a href="#project-ai" aria-label="AI Landing Generator"></a>
+      <a href="#project-news" aria-label="Global News Agent"></a>
+      <a href="#project-analytics" aria-label="People Performance Analytics"></a>
+      <a href="#project-signal" aria-label="DashTeam Signal Bridge"></a>
+      <a href="#about" aria-label="Обо мне"></a>
+    </aside>
+
+    <main>
+      <section class="intro snap-section" id="intro" data-slide>
+        <div class="intro-copy">
+          <p class="kicker"><span></span> Product developer · Kyiv</p>
+          <h1>Viktoriia<br />Boiko</h1>
+          <p class="intro-lead">
+            Создаю AI‑продукты, аналитические системы и интеграции — от идеи и интерфейса до работающего production‑решения.
           </p>
-          <a class="round-link" href="#projects" aria-label="Перейти к проектам">↓</a>
+        </div>
+        <div class="intro-aside">
+          <p>04 проекта</p>
+          <p>Full‑stack · AI · Data</p>
+          <a href="#project-ai">Смотреть работы <i class="ri-arrow-down-line"></i></a>
         </div>
       </section>
 
-      <section id="projects" class="projects">
-        <div class="section-line wrap">
-          <span>Selected projects</span><span>04 / 2026</span>
-        </div>
-
-        <article class="project project-lime">
-          <div class="project-head wrap">
-            <span class="number">01</span>
-            <div>
-              <p class="eyebrow">AI SaaS · Full-stack web application</p>
-              <h2>AI Landing<br />Generator</h2>
-            </div>
-            <a
-              class="repo-link"
-              href="https://github.com/ViktoriiaBoiko2298/ai-landing-pro"
-              target="_blank"
-              rel="noreferrer"
-            >GitHub repository ↗</a>
-          </div>
-          <figure class="project-shot wrap">
-            <img
-              src="./assets/ai-landing.png"
-              alt="Интерфейс AI Landing Generator с формой брифа и настройками генерации"
-            />
-          </figure>
-          <div class="project-info wrap">
-            <div>
-              <p class="info-label">Задача</p>
-              <p class="lead">
-                Превратить короткий бриф о продукте в структурированный текст
-                лендинга, который можно редактировать, переводить и экспортировать.
-              </p>
-            </div>
-            <div class="info-columns">
-              <div>
-                <p class="info-label">Что реализовано</p>
-                <ul>
-                  <li>Генерация и улучшение текстов через OpenAI</li>
-                  <li>Тон, шаблон, SEO‑режим и варианты контента</li>
-                  <li>Языки EN / UK / RU и перевод результата</li>
-                  <li>Live preview и экспорт в PDF</li>
-                  <li>Кабинет, проекты и система кредитов</li>
-                </ul>
-              </div>
-              <div>
-                <p class="info-label">Интеграции и стек</p>
-                <div class="tags">
-                  <span>Next.js 16</span><span>React 19</span><span>TypeScript</span>
-                  <span>OpenAI API</span><span>Stripe</span><span>PDF</span>
-                </div>
-                <p class="detail">
-                  Stripe Checkout, webhook‑обработка подписок, credit wallet,
-                  API‑маршруты генерации, перевода, рекламы и экспорта.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project project-dark">
-          <div class="project-head wrap">
-            <span class="number">02</span>
-            <div>
-              <p class="eyebrow">News intelligence · Search & monitoring</p>
-              <h2>Global News<br />Agent</h2>
-            </div>
-            <a
-              class="repo-link"
-              href="https://github.com/ViktoriiaBoiko2298/global-news-agent"
-              target="_blank"
-              rel="noreferrer"
-            >GitHub repository ↗</a>
-          </div>
-          <figure class="project-shot wrap">
-            <img
-              src="./assets/news-agent.png"
-              alt="Интерфейс Global News Agent с поиском новостей и фильтрами"
-            />
-          </figure>
-          <div class="project-info wrap">
-            <div>
-              <p class="info-label">Задача</p>
-              <p class="lead">
-                Собирать новости из разных источников в одном рабочем пространстве,
-                убирать информационный шум и быстро находить важные сигналы.
-              </p>
-            </div>
-            <div class="info-columns">
-              <div>
-                <p class="info-label">Что реализовано</p>
-                <ul>
-                  <li>Поиск по темам, тикерам и сырьевым рынкам</li>
-                  <li>Смысловое ранжирование и объединение дублей</li>
-                  <li>Фильтры по стране, языку, теме и источнику</li>
-                  <li>Закладки, история, теги, алерты и briefing</li>
-                  <li>Автообновление и browser push‑уведомления</li>
-                </ul>
-              </div>
-              <div>
-                <p class="info-label">Интеграции и стек</p>
-                <div class="tags">
-                  <span>Node.js</span><span>Express</span><span>GDELT</span>
-                  <span>Google News RSS</span><span>Web Push</span><span>Render</span>
-                </div>
-                <p class="detail">
-                  Несколько RSS‑источников, кеш и очередь запросов, VAPID push,
-                  persistent storage, health check, SEO и production‑конфигурация.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project project-paper">
-          <div class="project-head wrap">
-            <span class="number">03</span>
-            <div>
-              <p class="eyebrow">Business analytics · Data automation</p>
-              <h2>People Performance<br />Analytics</h2>
-            </div>
-            <a
-              class="repo-link"
-              href="https://github.com/ViktoriiaBoiko2298/people-performance-analytics"
-              target="_blank"
-              rel="noreferrer"
-            >GitHub repository ↗</a>
-          </div>
-          <figure class="project-shot wrap">
-            <img
-              src="./assets/performance-analytics.png"
-              alt="Интерфейс People Performance Analytics для контроля источников и отчетов"
-            />
-          </figure>
-          <div class="project-info wrap">
-            <div>
-              <p class="info-label">Задача</p>
-              <p class="lead">
-                Автоматизировать сбор постов сотрудников и превратить разрозненные
-                Google Sheets в понятную систему контроля эффективности.
-              </p>
-            </div>
-            <div class="info-columns">
-              <div>
-                <p class="info-label">Что реализовано</p>
-                <ul>
-                  <li>Импорт Google Sheets, CSV‑файлов и CSV‑текста</li>
-                  <li>Метрики просмотров и история наблюдений</li>
-                  <li>Командная сводка и профили сотрудников</li>
-                  <li>Дневные отчёты и архив результатов</li>
-                  <li>Автосинхронизация по расписанию</li>
-                </ul>
-              </div>
-              <div>
-                <p class="info-label">Интеграции и стек</p>
-                <div class="tags">
-                  <span>Node.js</span><span>Google Sheets</span><span>CSV</span>
-                  <span>Scheduled sync</span><span>JSON storage</span><span>Render</span>
-                </div>
-                <p class="detail">
-                  Данные сохраняются даже после удаления исходных строк; production
-                  использует persistent disk и ежедневную синхронизацию в 23:15.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project project-blue">
-          <div class="project-head wrap">
-            <span class="number">04</span>
-            <div>
-              <p class="eyebrow">Backend service · Messaging integration</p>
-              <h2>DashTeam<br />Signal Bridge</h2>
-            </div>
-            <a
-              class="repo-link"
-              href="https://github.com/ViktoriiaBoiko2298/dashteam-signal-bridge"
-              target="_blank"
-              rel="noreferrer"
-            >GitHub repository ↗</a>
-          </div>
-          <div class="architecture wrap" role="img" aria-label="Архитектура DashTeam Signal Bridge">
-            <div class="arch-node">
-              <span>01</span>
-              <strong>DashTeam</strong>
-              <small>event / notification</small>
-            </div>
-            <i>→</i>
-            <div class="arch-node active">
-              <span>02</span>
-              <strong>Signal Bridge</strong>
-              <small>secure Node.js API</small>
-            </div>
-            <i>→</i>
-            <div class="arch-node">
-              <span>03</span>
-              <strong>signal-cli</strong>
-              <small>REST API · linked device</small>
-            </div>
-            <i>→</i>
-            <div class="arch-node">
-              <span>04</span>
-              <strong>Signal</strong>
-              <small>message delivery</small>
-            </div>
-          </div>
-          <div class="project-info wrap">
-            <div>
-              <p class="info-label">Задача</p>
-              <p class="lead">
-                Безопасно передавать сообщения из DashTeam в Signal через отдельный
-                компактный сервис, который можно запускать в Docker.
-              </p>
-            </div>
-            <div class="info-columns">
-              <div>
-                <p class="info-label">Что реализовано</p>
-                <ul>
-                  <li>Защищённые endpoints отправки и тестирования</li>
-                  <li>Bearer‑авторизация и проверка payload</li>
-                  <li>QR‑подключение Signal как linked device</li>
-                  <li>Автоматическое определение номера отправителя</li>
-                  <li>Health check и обработка ошибок upstream</li>
-                </ul>
-              </div>
-              <div>
-                <p class="info-label">Интеграции и стек</p>
-                <div class="tags">
-                  <span>Node.js 22</span><span>HTTP API</span><span>Docker</span>
-                  <span>signal-cli REST API</span><span>Bearer auth</span>
-                </div>
-                <p class="detail">
-                  Минимальный сервис без внешних зависимостей: `/health`, `/send`,
-                  `/test` и защищённый `/setup/qr`. Конфигурация хранится в env.
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section id="about" class="about wrap">
-        <p class="eyebrow">About / approach</p>
-        <div>
-          <h2>От идеи —<br />до работающей<br />системы<span>.</span></h2>
-          <div class="about-text">
-            <p>
-              Я работаю с продуктом целиком: продумываю пользовательский сценарий,
-              создаю интерфейс и backend, подключаю внешние сервисы, хранение данных,
-              платежи, уведомления и развёртывание.
+      <section class="project-slide snap-section tone-yellow" id="project-ai" data-slide>
+        <div class="slide-top">
+          <div class="slide-heading">
+            <p class="slide-count">Проект 01 / 04</p>
+            <h2>AI Landing<br />Generator</h2>
+            <p class="slide-summary">
+              AI‑сервис, который превращает продуктовый бриф в структуру и тексты готового лендинга.
             </p>
-            <div class="tags">
-              <span>Product thinking</span><span>AI integration</span>
-              <span>Full-stack</span><span>Data automation</span>
-              <span>Deployment</span>
-            </div>
+          </div>
+          <div class="gallery gallery-ai" aria-label="Экраны AI Landing Generator">
+            <figure class="shot shot-main">
+              <img src="./assets/ai-landing.png" alt="Главный экран AI Landing Generator" />
+              <figcaption>01 · Генератор и настройки</figcaption>
+            </figure>
+            <figure class="shot shot-small shot-top">
+              <img src="./assets/ai-projects.png" alt="Проекты в AI Landing Generator" />
+              <figcaption>02 · Библиотека проектов</figcaption>
+            </figure>
+            <figure class="shot shot-small shot-bottom">
+              <img src="./assets/ai-subscription.png" alt="Тарифы AI Landing Generator" />
+              <figcaption>03 · Подписка и биллинг</figcaption>
+            </figure>
           </div>
         </div>
+        <div class="slide-rail">
+          <div class="rail-block">
+            <p>Интеграции</p>
+            <div class="tech-list">
+              <span><i class="ri-openai-fill"></i> OpenAI API</span>
+              <span><i class="ri-bank-card-line"></i> Stripe</span>
+              <span><i class="ri-file-pdf-2-line"></i> PDF Export</span>
+            </div>
+          </div>
+          <div class="rail-block">
+            <p>Технологии</p>
+            <div class="tags"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Tailwind</span></div>
+          </div>
+          <a class="github-link" href="https://github.com/ViktoriiaBoiko2298/ai-landing-pro" target="_blank" rel="noreferrer">
+            <i class="ri-github-fill"></i><span>Открыть на GitHub</span><i class="ri-arrow-right-up-line"></i>
+          </a>
+          <div class="slide-arrows">
+            <button data-prev aria-label="Предыдущий слайд"><i class="ri-arrow-up-line"></i></button>
+            <button data-next aria-label="Следующий слайд"><i class="ri-arrow-down-line"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-slide snap-section tone-mint" id="project-news" data-slide>
+        <div class="slide-top">
+          <div class="slide-heading">
+            <p class="slide-count">Проект 02 / 04</p>
+            <h2>Global News<br />Agent</h2>
+            <p class="slide-summary">
+              Рабочее пространство для поиска мировых и финансовых новостей без информационного шума.
+            </p>
+          </div>
+          <div class="gallery gallery-news" aria-label="Экраны Global News Agent">
+            <figure class="shot shot-main">
+              <img src="./assets/news-agent.png" alt="Рабочий экран Global News Agent" />
+              <figcaption>01 · Поиск и фильтры</figcaption>
+            </figure>
+            <figure class="shot shot-small shot-top">
+              <img src="./assets/news-bento.png" alt="Bento‑представление новостной аналитики" />
+              <figcaption>02 · Intelligence view</figcaption>
+            </figure>
+            <figure class="shot shot-small shot-bottom">
+              <img src="./assets/news-briefing.png" alt="Экран executive briefing" />
+              <figcaption>03 · Executive briefing</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="slide-rail">
+          <div class="rail-block">
+            <p>Интеграции</p>
+            <div class="tech-list">
+              <span><i class="ri-rss-line"></i> Google News</span>
+              <span><i class="ri-global-line"></i> GDELT</span>
+              <span><i class="ri-notification-3-line"></i> Web Push</span>
+            </div>
+          </div>
+          <div class="rail-block">
+            <p>Технологии</p>
+            <div class="tags"><span>Node.js</span><span>Express</span><span>RSS</span><span>VAPID</span></div>
+          </div>
+          <a class="github-link" href="https://github.com/ViktoriiaBoiko2298/global-news-agent" target="_blank" rel="noreferrer">
+            <i class="ri-github-fill"></i><span>Открыть на GitHub</span><i class="ri-arrow-right-up-line"></i>
+          </a>
+          <div class="slide-arrows">
+            <button data-prev aria-label="Предыдущий слайд"><i class="ri-arrow-up-line"></i></button>
+            <button data-next aria-label="Следующий слайд"><i class="ri-arrow-down-line"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-slide snap-section tone-peach" id="project-analytics" data-slide>
+        <div class="slide-top">
+          <div class="slide-heading">
+            <p class="slide-count">Проект 03 / 04</p>
+            <h2>People Performance<br />Analytics</h2>
+            <p class="slide-summary">
+              Аналитическая система, которая превращает Google Sheets и CSV в командные метрики и ежедневные отчёты.
+            </p>
+          </div>
+          <div class="gallery gallery-analytics" aria-label="Экраны People Performance Analytics">
+            <figure class="shot shot-main">
+              <img src="./assets/performance-dashboard.png" alt="Командный dashboard People Performance Analytics" />
+              <figcaption>01 · Командная аналитика</figcaption>
+            </figure>
+            <figure class="shot shot-small shot-top detail-crop detail-crop-top">
+              <img src="./assets/performance-dashboard.png" alt="Метрики команды крупным планом" />
+              <figcaption>02 · Метрики и сравнение</figcaption>
+            </figure>
+            <figure class="shot shot-small shot-bottom detail-crop detail-crop-bottom">
+              <img src="./assets/performance-analytics.png" alt="Управление источниками данных" />
+              <figcaption>03 · Источники и импорт</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="slide-rail">
+          <div class="rail-block">
+            <p>Интеграции</p>
+            <div class="tech-list">
+              <span><i class="ri-file-excel-2-line"></i> Google Sheets</span>
+              <span><i class="ri-file-list-3-line"></i> CSV</span>
+              <span><i class="ri-time-line"></i> Daily Sync</span>
+            </div>
+          </div>
+          <div class="rail-block">
+            <p>Технологии</p>
+            <div class="tags"><span>Node.js</span><span>REST API</span><span>JSON Store</span><span>Render</span></div>
+          </div>
+          <a class="github-link" href="https://github.com/ViktoriiaBoiko2298/people-performance-analytics" target="_blank" rel="noreferrer">
+            <i class="ri-github-fill"></i><span>Открыть на GitHub</span><i class="ri-arrow-right-up-line"></i>
+          </a>
+          <div class="slide-arrows">
+            <button data-prev aria-label="Предыдущий слайд"><i class="ri-arrow-up-line"></i></button>
+            <button data-next aria-label="Следующий слайд"><i class="ri-arrow-down-line"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-slide snap-section tone-blue" id="project-signal" data-slide>
+        <div class="slide-top">
+          <div class="slide-heading">
+            <p class="slide-count">Проект 04 / 04</p>
+            <h2>DashTeam<br />Signal Bridge</h2>
+            <p class="slide-summary">
+              Защищённый backend‑мост между событиями DashTeam и доставкой сообщений в Signal.
+            </p>
+          </div>
+          <div class="signal-visual">
+            <figure class="code-shot">
+              <img src="./assets/signal-code.png" alt="Исходный код DashTeam Signal Bridge на GitHub" />
+              <figcaption>01 · Реальный Node.js‑сервис</figcaption>
+            </figure>
+            <ol class="signal-flow">
+              <li><span>01</span><strong>DashTeam</strong><small>событие или уведомление</small></li>
+              <li><span>02</span><strong>Bridge API</strong><small>проверка токена и payload</small></li>
+              <li><span>03</span><strong>signal‑cli</strong><small>REST API linked device</small></li>
+              <li><span>04</span><strong>Signal</strong><small>доставка сообщения</small></li>
+            </ol>
+          </div>
+        </div>
+        <div class="slide-rail">
+          <div class="rail-block">
+            <p>Возможности</p>
+            <div class="tech-list">
+              <span><i class="ri-shield-keyhole-line"></i> Bearer Auth</span>
+              <span><i class="ri-qr-code-line"></i> QR Setup</span>
+              <span><i class="ri-heart-pulse-line"></i> Health Check</span>
+            </div>
+          </div>
+          <div class="rail-block">
+            <p>Технологии</p>
+            <div class="tags"><span>Node.js 22</span><span>HTTP API</span><span>Docker</span><span>signal‑cli</span></div>
+          </div>
+          <a class="github-link" href="https://github.com/ViktoriiaBoiko2298/dashteam-signal-bridge" target="_blank" rel="noreferrer">
+            <i class="ri-github-fill"></i><span>Открыть на GitHub</span><i class="ri-arrow-right-up-line"></i>
+          </a>
+          <div class="slide-arrows">
+            <button data-prev aria-label="Предыдущий слайд"><i class="ri-arrow-up-line"></i></button>
+            <button data-next aria-label="Следующий слайд"><i class="ri-arrow-down-line"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about snap-section" id="about" data-slide>
+        <p class="kicker">About / approach</p>
+        <div class="about-grid">
+          <h2>От идеи —<br />до работающей<br />системы<span>.</span></h2>
+          <div>
+            <p>
+              Я работаю с продуктом целиком: проектирую интерфейс, пишу frontend и backend, подключаю AI, данные, платежи, уведомления и развёртывание.
+            </p>
+            <div class="about-tags">
+              <span>Product thinking</span><span>AI integration</span><span>Full‑stack</span><span>Data automation</span>
+            </div>
+            <a href="mailto:viktoriiaboikoo@gmail.com">Давайте обсудим проект <i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+        <footer><span>© 2026 Viktoriia Boiko</span><a href="https://github.com/ViktoriiaBoiko2298" target="_blank" rel="noreferrer">GitHub <i class="ri-arrow-right-up-line"></i></a></footer>
       </section>
     </main>
-
-    <footer>
-      <div class="wrap footer-main">
-        <div>
-          <p class="eyebrow">Есть задача или идея?</p>
-          <a href="mailto:viktoriiaboikoo@gmail.com">Давайте обсудим ↗</a>
-        </div>
-        <nav>
-          <a href="https://github.com/ViktoriiaBoiko2298" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="mailto:viktoriiaboikoo@gmail.com">Email ↗</a>
-        </nav>
-      </div>
-      <div class="wrap footer-bottom">
-        <span>© 2026 Viktoriia Boiko</span><span>Kyiv · Ukraine</span>
-      </div>
-    </footer>
   </body>
 </html>
