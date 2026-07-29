@@ -131,7 +131,7 @@ img { display: block; width: 100%; }
   height: auto;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: 1fr;
+  grid-template-rows: auto auto;
   gap: 15px;
   align-self: center;
 }
@@ -166,6 +166,39 @@ img { display: block; width: 100%; }
   text-transform: uppercase;
   letter-spacing: .06em;
   box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+.project-highlights {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.project-highlights article {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(25,25,21,.16);
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(25,25,21,.06);
+}
+.project-highlights article:nth-child(1) { background: #f4ffd6; }
+.project-highlights article:nth-child(2) { background: #eee9ff; }
+.project-highlights article:nth-child(3) { background: #dff5ff; }
+.project-highlights i {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+.project-highlights span {
+  display: block;
+  font: 600 13px/1.1 "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+}
+.project-highlights p {
+  margin: 7px 0 0;
+  font-size: 11px;
+  line-height: 1.35;
+  opacity: .68;
 }
 .slide-rail {
   grid-column: 2;
@@ -341,6 +374,9 @@ img { display: block; width: 100%; }
   .slide-summary { margin: 28px 0 45px; font-size: 18px; }
   .gallery { height: auto; display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto; gap: 9px; }
   .shot-main, .shot-small { grid-column: auto; grid-row: auto; height: auto; transform: none; }
+  .project-highlights { grid-column: 1; grid-template-columns: 1fr; gap: 8px; margin-top: 4px; }
+  .project-highlights article { padding: 15px; }
+  .project-highlights i { margin-bottom: 10px; }
   .shot figcaption, .code-shot figcaption { font-size: 7px; left: 6px; bottom: 6px; }
   .slide-rail { grid-template-columns: 1fr; }
   .rail-block, .github-link, .live-link, .slide-arrows { padding: 22px 18px; border-right: 0; border-bottom: 1px solid var(--line); }

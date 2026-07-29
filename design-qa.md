@@ -24,6 +24,7 @@
 - Side rail: integrations and technologies are readable without scrolling inside the slide; live-site and GitHub actions remain separated and visible.
 - Gallery: every screenshot has a visible zoom affordance. Clicking the main DashTeam screenshot opens a modal with the full source image; the close control works.
 - Two-screen gallery: all four galleries report exactly two figures. Desktop cards use a consistent 16:10 frame and preserve the entire screenshot; mobile stacks the two frames vertically.
+- Capability fill: each gallery now includes three compact capability cards directly below the two screenshots. At 1024 × 650, the News gallery occupies y=214–537 and the technical rail reaches the viewport bottom, eliminating the previous large empty lower area without overlap.
 - Responsive check: 390 × 844 viewport has no horizontal overflow. Content and side rail stack vertically.
 - Intermediate-width check: 936 × 1514 viewport has no horizontal overflow or overlap. The project gallery stays above a two-column technology/integration rail.
 - Revised intermediate layout check: at 1024 × 768, the heading begins 100 px from the viewport top, the complete integrations/technologies/GitHub card ends at 609 px, and the gallery remains in a separate right column without overlap.
@@ -44,11 +45,13 @@
 - User-requested refinement: the medium-width rail was still too far below the project. Fixed by placing the project heading and complete technical card in the left column while the gallery occupies the full right column. Two supplied DashTeam product screenshots now replace repeated landing-page crops.
 - Intro and color refinement: replaced the cropped screenshot watermark with complete live text “Viktoriia Boiko”; updated the professional positioning to no-code/AI automation; introduced solid lime and lavender rail sections, alternating technology chips, and a high-contrast GitHub action.
 - Screenshot-quality pass: removed the third thumbnail and all detail-crop/zoom treatments from every project. Replaced AI, News, and Analytics assets with fresh local captures showing full working screens; retained only the DashTeam board and task card.
+- Empty-space refinement: added project-specific “what it does” cards with Remix icons and solid lime, lavender, and blue backgrounds. Cards describe real capabilities and visually connect the screenshot gallery to the integration rail.
 - Post-fix evidence: `check-dashteam-side.png`, `check-lightbox.png`, and `check-mobile.png`.
 - Responsive post-fix evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-936-fixed.png` and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-desktop-fixed.png`.
 - Latest evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-medium-content-left.png`, `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-dashteam-new-screens.png`, and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-dashteam-new-mobile.png`.
 - Intro/color evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-intro-nocode.png` and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-color-rail.png`.
 - Gallery evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/screens-contact-sheet.png`, `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/portfolio-two-shots-ai-final.png`, and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/portfolio-two-shots-dashteam-final.png`.
+- Filled-layout evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/portfolio-filled-news.png` and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/portfolio-filled-mobile.png`.
 
 **Open Questions**
 
@@ -67,6 +70,8 @@
 - [x] Color treatment verified with no horizontal overflow or console errors.
 - [x] Exactly two uncropped screenshots per project verified.
 - [x] Fresh local product captures checked for readable content and consistent dimensions.
+- [x] Three project-specific capability cards added to every slide.
+- [x] Filled layout checked at 1024 × 650 and 390 × 844 with no horizontal overflow or console errors.
 - [x] Console errors checked.
 
 **Follow-up Polish**
