@@ -16,6 +16,7 @@
 - Colors and visual tokens: warm white, pale blue, black, lime accents, fine gray borders, and restrained elevation remain consistent with the selected design.
 - Image quality and asset fidelity: the real DashTeam screenshot is sharp, correctly cropped, and reused for meaningful detail views. No placeholder imagery is present. The zoomed dialog shows the full screenshot without cropping.
 - Copy and content: project name, live site link, integrations, technologies, and Signal Bridge repository label are specific and readable.
+- Positioning copy: the introductory role now reads “No-code creator · AI automation · Kyiv”; the lead and capability line consistently emphasize no-code, AI, and automation rather than product-development or full-stack positioning.
 
 **Focused region evidence**
 
@@ -39,9 +40,11 @@
 - Earlier P2: integrations and technologies were compressed in a bottom rail. Fixed by moving them into a high-contrast right-side rail on desktop and a readable stacked rail on mobile.
 - Later P1: at approximately 936 px viewport width, the desktop gallery extended beneath the 300 px side rail. Fixed with a dedicated ≤1320 px layout: the project remains a two-column editorial composition while the rail moves below it; at ≤920 px the complete mobile stack is used.
 - User-requested refinement: the medium-width rail was still too far below the project. Fixed by placing the project heading and complete technical card in the left column while the gallery occupies the full right column. Two supplied DashTeam product screenshots now replace repeated landing-page crops.
+- Intro and color refinement: replaced the cropped screenshot watermark with complete live text “Viktoriia Boiko”; updated the professional positioning to no-code/AI automation; introduced solid lime and lavender rail sections, alternating technology chips, and a high-contrast GitHub action.
 - Post-fix evidence: `check-dashteam-side.png`, `check-lightbox.png`, and `check-mobile.png`.
 - Responsive post-fix evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-936-fixed.png` and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-desktop-fixed.png`.
 - Latest evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-medium-content-left.png`, `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-dashteam-new-screens.png`, and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-dashteam-new-mobile.png`.
+- Intro/color evidence: `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-intro-nocode.png` and `/Users/viktoria/Documents/Codex/2026-07-29/new-chat/work/check-color-rail.png`.
 
 **Open Questions**
 
@@ -56,6 +59,8 @@
 - [x] Intermediate-width overlap checked at 936 px.
 - [x] Complete technical card visible beside the gallery at 1024 × 768.
 - [x] Supplied DashTeam board and task-detail screenshots added and verified.
+- [x] No-code positioning and complete decorative name verified.
+- [x] Color treatment verified with no horizontal overflow or console errors.
 - [x] Console errors checked.
 
 **Follow-up Polish**
